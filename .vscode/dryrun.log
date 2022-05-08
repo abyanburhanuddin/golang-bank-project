@@ -1,0 +1,4 @@
+make: Entering directory `/Users/abyanba/projects/golang-bank-project'
+docker run --name golang_bank_postgres -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:13-alpine
+make: Leaving directory `/Users/abyanba/projects/golang-bank-project'
+ 
