@@ -1,6 +1,12 @@
 postgres:
 	docker run --name golang_bank_postgres -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:13-alpine
 
+dbstart:
+	docker start ce1c810f330c
+
+dbstop:
+	docker stop ce1c810f330c
+
 createdb:
 	docker exec -it golang_bank_postgres createdb --username=root --owner=root simple_bank
 
@@ -16,4 +22,7 @@ migratedown:
 sqlc:
 	sqlc generate
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc
+test:
+	go test -v -cover ./...
+
+.PHONY: postgres dbstart dbstop createdb dropdb migrateup migratedown sqlc test
