@@ -6,11 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Sun May  8 12:59:31 2022
+# Make data base, printed on Mon May  9 20:51:18 2022
 
 # Variables
 
@@ -18,6 +15,10 @@ make: *** No rule to make target `all'.  Stop.
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+LC_CTYPE = UTF-8
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -37,17 +38,25 @@ _ = /usr/bin/make
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/k_/6cnj5r9s38z58hv6dc9gg5hc0000gn/T/vscode-ipc-e92e49e2-001e-41fe-b957-44ea3395eb3b.sock
+P9K_SSH = 0
 # environment
-VSCODE_CWD = /
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/k_/6cnj5r9s38z58hv6dc9gg5hc0000gn/T/vscode-ipc-1e00199b-3089-4834-b402-dc92f25a6c2e.sock
 # environment
-PATH = /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+VSCODE_CWD = /Users/abyanba/projects/golang-bank-project
 # environment
-LaunchInstanceID = 11995B98-694E-446D-8CCE-1DEBE97CAF60
+GOPROXY = https://proxy.golang.org,direct
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/abyanba/.fig/bin:/Users/abyanba/.local/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+# environment
+LSCOLORS = ExGxBxDxCxEgEdxbxgxcxd
+# environment
+GOPATH = /Users/abyanba/go
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -55,49 +64,71 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.eifMtp6TaL/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1NOgtsDcTz/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
+TTY = not a tty
+# environment
 VSCODE_PIPE_LOGGING = true
+# environment
+FIG_PID = 968
 # environment
 PWD = /Users/abyanba/projects/golang-bank-project
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+GOMODCACHE = /Users/abyanba/go/pkg/mod
 # environment
 HOME = /Users/abyanba
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
+VSCODE_CLI = 1
+# environment
 VSCODE_CODE_CACHE_PATH = /Users/abyanba/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
 # environment
 LOGNAME = abyanba
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/abyanba/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
-# default
-MAKECMDGOALS := all
 # environment
-SHLVL = 1
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
+# environment
+FIG_TERM = 1
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = abyanba
-# makefile
-.DEFAULT_GOAL := postgres
+# environment
+FIG_TERM_VERSION = 4.3.0
+# default
+MAKECMDGOALS := all
+# environment
+TERM_SESSION_ID = w0t0p0:B94CF949-6B34-4EEE-BE22-2CB2D5EEEF20
+# environment
+LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
+# environment
+FIG_INTEGRATION_VERSION = 8
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -113,12 +144,19 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.5326527.5326533
+TERM_PROGRAM_VERSION = 3.4.15
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.5326527.5326533.6B2B97B7-2556-486F-A459-0D34F22A6AC8
+# environment
+LC_TERMINAL_VERSION = 3.4.15
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
- 
 +F = $(notdir $+)
+# environment
+ITERM_SESSION_ID = w0t0p0:B94CF949-6B34-4EEE-BE22-2CB2D5EEEF20
+# environment
+COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x2
 # environment
@@ -128,9 +166,13 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
+ITERM_PROFILE = One Dark
+# environment
+PAGER = less
+# environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186a3
+P9K_TTY = old
 # automatic
 ^F = $(notdir $^)
 # default
@@ -139,12 +181,18 @@ SUFFIXES :=
 .INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
+# makefile
+.DEFAULT_GOAL := postgres
 # environment
 LANG = C
 # environment
-VSCODE_PID = 381
+TERM = xterm-256color
+# environment
+_P9K_TTY = not a tty
+# environment
+VSCODE_PID = 3175
 # variable set hash-table stats:
-# Load=64/1024=6%, Rehash=0, Collisions=1/88=1%
+# Load=90/1024=9%, Rehash=0, Collisions=7/114=6%
 
 # Pattern-specific Variable Values
 
@@ -152,9 +200,9 @@ VSCODE_PID = 381
 
 # Directories
 
-# . (device 16777224, inode 5348769): 9 files, no impossibilities.
+# . (device 16777223, inode 5348769): 12 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -180,17 +228,27 @@ all:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-.PHONY: postgres createdb dropdb migrateup migratedown
+.PHONY: postgres dbstart dbstop createdb dropdb migrateup migratedown sqlc test
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 sqlc:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 17):
+#  commands to execute (from `Makefile', line 23):
 	sqlc generate
+	
+
+dbstop:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 8):
+	docker stop ce1c810f330c
 	
 
 # Not a target:
@@ -202,19 +260,37 @@ sqlc:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-08 12:59:21
+#  Last modified 2022-05-08 20:33:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 26):
+	go test -v -cover ./...
+	
 
 createdb:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 5):
+#  commands to execute (from `Makefile', line 11):
 	docker exec -it golang_bank_postgres createdb --username=root --owner=root simple_bank
+	
+
+dbstart:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 5):
+	docker start ce1c810f330c
 	
 
 # Not a target:
@@ -228,7 +304,7 @@ dropdb:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 8):
+#  commands to execute (from `Makefile', line 14):
 	docker exec -it golang_bank_postgres dropdb --username=root --owner=root simple_bank
 	
 
@@ -237,7 +313,7 @@ migrateup:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 11):
+#  commands to execute (from `Makefile', line 17):
 	migrate -path db/migrations -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up
 	
 
@@ -245,13 +321,16 @@ migratedown:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
+ 
+make: *** No rule to make target `all'.  Stop.
+
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 14):
+#  commands to execute (from `Makefile', line 20):
 	migrate -path db/migrations -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose down
 	
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/28=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/35=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -263,6 +342,6 @@ migratedown:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun May  8 12:59:31 2022
+# Finished Make data base on Mon May  9 20:51:18 2022
 
  
