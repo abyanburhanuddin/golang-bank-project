@@ -1,13 +1,18 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
+ 
 # This is free software; see the source for copying conditions.
 # There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.
+ 
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Mon May  9 20:51:18 2022
+
+# Make data base, printed on Tue May 10 13:26:34 2022
 
 # Variables
 
@@ -15,10 +20,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-LC_CTYPE = UTF-8
+ 
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -44,19 +46,17 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-P9K_SSH = 0
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/k_/6cnj5r9s38z58hv6dc9gg5hc0000gn/T/vscode-ipc-7c426c24-a739-4d1d-9ca5-2fb6a918e284.sock
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/k_/6cnj5r9s38z58hv6dc9gg5hc0000gn/T/vscode-ipc-1e00199b-3089-4834-b402-dc92f25a6c2e.sock
-# environment
-VSCODE_CWD = /Users/abyanba/projects/golang-bank-project
+VSCODE_CWD = /
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/abyanba/.fig/bin:/Users/abyanba/.local/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
-# environment
-LSCOLORS = ExGxBxDxCxEgEdxbxgxcxd
+PATH = /usr/local/Cellar/go/1.17.8/libexec/bin:/usr/bin:/bin:/usr/sbin:/sbin
 # environment
 GOPATH = /Users/abyanba/go
+# environment
+LaunchInstanceID = 892E967C-E149-40ED-87C8-54E041A47FAC
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -64,15 +64,11 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1NOgtsDcTz/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.yAPbVMUy4x/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-TTY = not a tty
-# environment
 VSCODE_PIPE_LOGGING = true
-# environment
-FIG_PID = 968
 # environment
 PWD = /Users/abyanba/projects/golang-bank-project
 # environment
@@ -84,51 +80,33 @@ HOME = /Users/abyanba
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CLI = 1
-# environment
 VSCODE_CODE_CACHE_PATH = /Users/abyanba/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
 # environment
 LOGNAME = abyanba
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
-ZSH = /Users/abyanba/.oh-my-zsh
-# environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
 # environment
-LC_TERMINAL = iTerm2
-# environment
-SHLVL = 3
-# environment
-FIG_TERM = 1
+SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = abyanba
-# environment
-FIG_TERM_VERSION = 4.3.0
-# default
-MAKECMDGOALS := all
-# environment
-TERM_SESSION_ID = w0t0p0:B94CF949-6B34-4EEE-BE22-2CB2D5EEEF20
-# environment
-LESS = -R
+# makefile
+.DEFAULT_GOAL := postgres
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# environment
-FIG_INTEGRATION_VERSION = 8
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
-# environment
-TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -144,19 +122,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 3.4.15
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.5326527.5326533.6B2B97B7-2556-486F-A459-0D34F22A6AC8
-# environment
-LC_TERMINAL_VERSION = 3.4.15
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.5326527.5326533
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
-# environment
-ITERM_SESSION_ID = w0t0p0:B94CF949-6B34-4EEE-BE22-2CB2D5EEEF20
-# environment
-COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x2
 # environment
@@ -166,13 +136,9 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
-ITERM_PROFILE = One Dark
-# environment
-PAGER = less
-# environment
 LC_ALL = C
 # environment
-P9K_TTY = old
+SECURITYSESSIONID = 186a3
 # automatic
 ^F = $(notdir $^)
 # default
@@ -181,18 +147,12 @@ SUFFIXES :=
 .INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
-# makefile
-.DEFAULT_GOAL := postgres
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
-_P9K_TTY = not a tty
-# environment
-VSCODE_PID = 3175
+VSCODE_PID = 390
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=7/114=6%
+# Load=67/1024=7%, Rehash=0, Collisions=2/91=2%
 
 # Pattern-specific Variable Values
 
@@ -200,9 +160,9 @@ VSCODE_PID = 3175
 
 # Directories
 
-# . (device 16777223, inode 5348769): 12 files, no impossibilities.
+# . (device 16777222, inode 5348769): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -239,6 +199,7 @@ sqlc:
 #  File does not exist.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 23):
+ 
 	sqlc generate
 	
 
@@ -315,15 +276,13 @@ migrateup:
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 17):
 	migrate -path db/migrations -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up
+ 
 	
 
 migratedown:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
- 
-make: *** No rule to make target `all'.  Stop.
-
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 20):
 	migrate -path db/migrations -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose down
@@ -342,6 +301,6 @@ make: *** No rule to make target `all'.  Stop.
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon May  9 20:51:18 2022
+# Finished Make data base on Tue May 10 13:26:34 2022
 
  
